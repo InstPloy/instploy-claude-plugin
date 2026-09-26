@@ -1,0 +1,28 @@
+{
+  "name": "instploy",
+  "version": "1.0.0",
+  "description": "Connect Claude to InstPloy MCP. On enable, set your MCP URL and Bearer token (or run /instploy:connect-instploy and paste your JSON).",
+  "author": {
+    "name": "Rightechs Solutions",
+    "url": "https://www.rightechs.net/"
+  },
+  "homepage": "https://github.com/InstPloy/instploy-claude-plugin",
+  "repository": "https://github.com/InstPloy/instploy-claude-plugin",
+  "license": "MIT",
+  "keywords": ["instploy", "odoo", "mcp", "deployment", "claude"],
+  "userConfig": {
+    "instploy_url": {
+      "type": "string",
+      "title": "InstPloy MCP URL",
+      "description": "InstPloy MCP URL, e.g. https://YOUR_INSTANCE.instploy.com/instploy/manager/mcp",
+      "required": true
+    },
+    "instploy_token": {
+      "type": "string",
+      "title": "Authorization Bearer token",
+      "description": "Token only (without the word Bearer). From headers.Authorization in your InstPloy MCP JSON.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

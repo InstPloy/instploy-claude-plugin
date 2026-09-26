@@ -1,0 +1,24 @@
+{
+  "name": "instploy-claude-plugin",
+  "owner": {
+    "name": "Rightechs Solutions",
+    "email": "info@rightechs.net"
+  },
+  "metadata": {
+    "description": "InstPloy plugins for Claude Code / Claude.ai",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "instploy",
+      "source": "./plugins/instploy",
+      "description": "Connect Claude to InstPloy MCP for Odoo deploy, upgrade, and workspace tools.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Rightechs Solutions"
+      },
+      "category": "development",
+      "tags": ["instploy", "odoo", "mcp", "deployment"]
+    }
+  ]
+}
